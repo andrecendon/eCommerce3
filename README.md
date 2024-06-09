@@ -1,5 +1,5 @@
-Initiate the app:
-1. go to /eCommerce
+Initiate the app local: 
+1. go main
 2. Create a virtual enviroment: python -m venv env
 3. source myenv/bin/activate
 4. pip install -r requirements.txt  
@@ -7,7 +7,7 @@ Initiate the app:
 6. LogIn with: username:Felipe password:f123 or username:admin1 password:a1
 
 BASICS: 
-It is an app develop with flask, using bootstrap to style the web, yet we focus more on the backend of it and its functionalities. There is also a shared style.css to reuse some style on the different templates. In the folder you find the app, a requirements text to install the depencies and this README. Inside the app you find the app.py, the models.py the database, templates...
+It is an app develop with flask, using bootstrap to style the web, yet we focus more on the backend of it and its functionalities. There is also a shared style.css to reuse some style on the different templates. In the folder you find the app.py, the models.py that also config and initiate the app, a requirements text to install the depencies and this README.
 
 FUNCIONALITIES:
 
