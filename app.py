@@ -6,24 +6,23 @@ import math
 import random
 from functools import wraps
 import signal
-
-
-
-# eCommerce/app/models.py
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_bootstrap import Bootstrap
 
+## CONFIG ##
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'clave_secreta'
 
+
+## INIT ##
 db = SQLAlchemy(app)
 login_manager = LoginManager(app)
 bootstrap = Bootstrap(app)
 
-
+## MODELS ##
 class Sale(db.Model):
     OrderNumber = db.Column(db.Integer, primary_key=True)
     date = db.Column(db.DateTime)
